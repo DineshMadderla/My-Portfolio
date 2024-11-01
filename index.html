@@ -7,7 +7,6 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="media.css" />
-    <link rel="shortcut icon" href="./assests/icons8-human-48.png">
   </head>
   <body>
     <nav id="desktop-nav">
@@ -28,7 +27,6 @@
           <span></span>
           <span></span>
           <span></span>
-          
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
@@ -36,7 +34,9 @@
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
+        <button>Dark mode</button>
       </div>
+      <button id="dark-mode-toggle" class="btn btn-color-2">Dark Mode</button>
     </nav>
     <section id="profile">
       <div class="section__pic-container">
@@ -49,7 +49,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assests/resume.pdf')"
+            onclick="window.open('./assests/cv.pdf')"
             resume
           >
             Download CV
@@ -63,19 +63,20 @@
             src="./assests/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href=''"
+            onclick="window.open('https://www.linkedin.com/in/dinesh-madderla-aba7b6334', '_blank')"
           />
           <img
             src="./assests/unnamed.png"
             alt="My naukri profile"
             class="icon"
-            onclick="location.href='https://www.naukri.com/mnjuser/profile?id=&altresid'"
+            onclick="window.open('https://www.naukri.com/mnjuser/profile?id=&altresid', '_blank')"
           />
           <img
             src="./assests/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/DineshMadderla'"
+            onclick="window.open('https://github.com/DineshMadderla', '_blank')"
+            
           />
         </div>
       </div>
@@ -281,13 +282,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/DineshMadderla/E-commerce_24'"
+                onclick="window.open('https://github.com/DineshMadderla', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://e-commerce-ni60nyt7n-dineshs-projects-b9fd8385.vercel.app/'"
+                onclick="window.open('https://ecommerce-frontend-nph5reww3-dineshs-projects-b9fd8385.vercel.app/', '_blank')"
               >
                 Live Demo
               </button>
@@ -311,13 +312,13 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/DineshMadderla/MY-blog'"
+                onclick="window.open('https://github.com/DineshMadderla/MY-blog', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://my-blog-csv2.onrender.com/'"
+                onclick="window.open('https://my-blog-csv2.onrender.com/', '_blank')"
               >
                 Live Demo
               </button>
@@ -371,7 +372,7 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#experience">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
